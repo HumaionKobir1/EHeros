@@ -4,6 +4,8 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/solid'
+import "./Navbar.css";
+
 
 import ehero from '../../assets/images/ehero.png'
 
@@ -13,8 +15,8 @@ const Navbar = () => {
 
     return (
         <div className='w-full md:w-4/5 mx-auto '>
-        <div className='py-5 mx-auto'>
-            <div className='relative flex items-center justify-between'>
+        <div className='py-5 mx-auto '>
+            <div className='relative flex items-center justify-between navbar'>
                 {/* Logo Section */}
                 <Link to='/' className='inline-flex items-center'>
                     <img className='w-24 md:w-32' src={ehero} alt="" />
@@ -45,9 +47,15 @@ const Navbar = () => {
                 
                 </ul>
 
-                <div className='flex justify-center items-center gap-3'>
-                    <Link to='/login' className='inline-flex md:block items-center'>
-                        <button className='px-5 py-2 rounded-md text-white bg-[#77153db2] border-none'>Login</button>
+                <div className='flex justify-center items-center gap-3 '>
+                    <Link to='/login' className='inline-flex font-semibold rounded-xl border-2 hover:border-[#03e9f4] bg-[#77153db2] text-white uppercase border-[#77153db2] md:block items-center'>
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Log In
+                    </a>
                     </Link>
                 </div>
 
