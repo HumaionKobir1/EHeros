@@ -1,8 +1,9 @@
+import Banner from "../../component/Banner/Banner";
 
 const Home = () => {
     return(
         <div>
-            <h1 className="text-5xl text-purple-600 text-center font-semibold">Humaion Kobir</h1>
+            <Banner></Banner>
         </div>
     );
 }
