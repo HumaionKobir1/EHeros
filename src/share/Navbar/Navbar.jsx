@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <div className='bg-[#eaeaeb]'>
-        <div className='w-full md:w-4/5 mx-auto'>
+        <div className='container mx-auto p-4'>
             <div className='relative flex items-center justify-between navbar'>
                 {/* Logo Section */}
                 <Link to='/' className='inline-flex items-center'>

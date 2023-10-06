@@ -5,7 +5,7 @@ import "./Banner.css";
 const Banner = () => {
     return (
         <div className="bg-[#eaeaeb] banner">
-            <div className="w-full md:w-4/5 md:flex md:flex-row flex-col gap-3  justify-between items-center mx-auto  py-5 px-3">
+            <div className="container mx-auto p-4 md:flex md:flex-row flex-col gap-3  justify-between items-center">
                 {/* Left Side */}
                 <div className="md:w-1/2 w-full">
                     <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-4">

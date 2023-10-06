@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "name": "Alexia",
+      "position": "Software Engineer",
+      "department": "IT",
+      "contact": "alexia@example.com",
+      "image": "https://img.freepik.com/free-photo/close-up-woman-working-laptop_23-2149300650.jpg?w=996&t=st=1696625817~exp=1696626417~hmac=09413ba18443e4ae01eb10d802241dc2bab4e7e9527b27a3cbc84ac995f1eaaa"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "position": "HR Manager",
+      "department": "HR",
+      "contact": "jane@example.com",
+      "image": "https://img.freepik.com/free-photo/close-up-business-people-work_23-2149300655.jpg?t=st=1696625817~exp=1696626417~hmac=7305c1a69ce01cae6d53f4cb9972ead88524ce1b937c1c17788a40e484f24ee8"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "position": "Product Manager",
+      "department": "Marketing",
+      "contact": "alice@example.com",
+      "image": "https://img.freepik.com/free-photo/writing-down-plan_1098-15897.jpg?w=996&t=st=1696626568~exp=1696627168~hmac=b27d1f6f505988437f23b2221c0a8989647183951776ece8a28adf978635e5ff"
+    },
+    {
+      "id": 4,
+      "name": "Bob Williams",
+      "position": "Data Analyst",
+      "department": "IT",
+      "contact": "bob@example.com",
+      "image": "https://img.freepik.com/free-photo/man-working-with-electronics_1098-14902.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Brown",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "contact": "charlie@example.com",
+      "image": "https://img.freepik.com/free-photo/busy-woman-doing-many-things-same-time_1098-3232.jpg?w=996&t=st=1696626513~exp=1696627113~hmac=2e838f249ec2ff15533fbe911485421b1c0a2b82afcfe97a576239531b5ede2e"
+    },
+    {
+      "id": 6,
+      "name": "David Lee",
+      "position": "Financial Analyst",
+      "department": "Finance",
+      "contact": "david@example.com",
+      "image": "https://img.freepik.com/free-photo/smiling-young-man-with-crossed-arms-outdoors_1140-255.jpg?w=740&t=st=1696626748~exp=1696627348~hmac=7c7c5fc1eb0224dd6d6ccce3c77a21392c2e8808df8f6dd24b657e48f20f94da"
+    },
+    {
+      "id": 7,
+      "name": "Eva Davis",
+      "position": "Customer Support",
+      "department": "Support",
+      "contact": "eva@example.com",
+      "image": "https://img.freepik.com/free-photo/businessman-black-suit-makes-thumbs-up_114579-15900.jpg?w=996&t=st=1696626844~exp=1696627444~hmac=c2bf2aa44a7d7ccfef7107ceced46309a75f447087894526ee4391c25f908aef"
+    },
+    {
+      "id": 8,
+      "name": "Frank Miller",
+      "position": "Quality Assurance",
+      "department": "IT",
+      "contact": "frank@example.com",
+      "image": "https://img.freepik.com/free-photo/happy-young-man_1098-20869.jpg?w=996&t=st=1696626431~exp=1696627031~hmac=99f33d1d445f0feae6534f88e1b8435cac426db05b8dcee941a79a90cf1e124e"
+    },
+    {
+      "id": 9,
+      "name": "Grace Taylor",
+      "position": "Human Resources",
+      "department": "HR",
+      "contact": "grace@example.com",
+      "image": "https://img.freepik.com/free-photo/content-successful-male-manager-using-tablet-looking-camera_1262-14194.jpg?w=996&t=st=1696626888~exp=1696627488~hmac=d592cd2e5e8811059e822790e97056135d9bfd955d35874ca879a3038883b1c1"
+    },
+    {
+      "id": 10,
+      "name": "Harry White",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "contact": "harry@example.com",
+      "image": "https://img.freepik.com/free-photo/writing-down-plan_1098-15897.jpg?w=996&t=st=1696626568~exp=1696627168~hmac=b27d1f6f505988437f23b2221c0a8989647183951776ece8a28adf978635e5ff"
+    }
+  ]
+  
