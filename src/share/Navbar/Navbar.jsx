@@ -14,8 +14,8 @@ const Navbar = () => {
     
 
     return (
-        <div className='w-full md:w-4/5 mx-auto '>
-        <div className='py-5 mx-auto '>
+        <div className='bg-slate-200 '>
+        <div className='w-full md:w-4/5 mx-auto'>
             <div className='relative flex items-center justify-between navbar'>
                 {/* Logo Section */}
                 <Link to='/' className='inline-flex items-center'>
@@ -70,8 +70,8 @@ const Navbar = () => {
                     <Bars3Icon className='w-5 text-gray-500' />
                 </button>
                 {isMenuOpen && (
-                    <div className='absolute top-0 left-0 w-full z-10 '>
-                    <div className='p-5 bg-slate-900 text-white border rounded shadow-sm'>
+                    <div className='absolute top-15 left-3 w-full z-50 '>
+                    <div className='p-5 bg-[#77153db2] text-white border rounded shadow-sm'>
                         {/* Logo & Button section */}
                         <div className='flex items-center justify-between mb-4'>
                         <div>
@@ -86,7 +86,7 @@ const Navbar = () => {
                             title='Close Menu'
                             onClick={() => setIsMenuOpen(false)}
                             >
-                            <XMarkIcon className='w-5 text-gray-500' />
+                            <XMarkIcon className='w-5 text-white' />
                             </button>
                         </div>
                         </div>
