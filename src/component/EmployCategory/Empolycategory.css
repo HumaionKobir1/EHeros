@@ -1,5 +1,5 @@
 
-  .navbar  a {
+.employcategory  a {
     display: inline-block;
     padding: 4px 10px;
     font-size: 16px;
@@ -9,12 +9,11 @@
     letter-spacing: 4px;
   }
   
-  .navbar a:hover {
+  .employcategory a:hover {
     background: #03e9f4;
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px #03e9f4, 0 0 10px #03e9f4, 0 0 10px #03e9f4,
-    0 0 20px #03e9f4;
+      0 0 20px #03e9f4;
   }
-  
   
