@@ -4,8 +4,8 @@ import "./Banner.css";
 
 const Banner = () => {
     return (
-        <div className="bg-[#eaeaeb] banner">
-            <div className="container mx-auto p-4 md:flex md:flex-row flex-col gap-3  justify-between items-center">
+        <div className="bg-[#eaeaeb] ">
+            <div className="container mx-auto banner p-4 md:flex md:flex-row flex-col gap-3  justify-between items-center">
                 {/* Left Side */}
                 <div className="md:w-1/2 w-full">
                     <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-4">
