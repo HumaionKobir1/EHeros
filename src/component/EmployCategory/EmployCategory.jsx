@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import initialEmployees from "../../../public/employees.json"
 import '../EmployCategory/Empolycategory.css'
+import Aos from 'aos';
 const EmployCategory = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedDepartment, setSelectedDepartment] = useState('all');
@@ -15,6 +16,10 @@ const EmployCategory = () => {
     );
     setFilteredEmployees(filtered);
   }, [searchTerm, selectedDepartment, showAllEmployees]);
+
+    useEffect(() => {
+      Aos.init();
+  }, [])
 
   return (
     <div className="container mx-auto p-4">
@@ -46,7 +51,7 @@ const EmployCategory = () => {
       </select>
 
       {/* Employee Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" >
         {filteredEmployees.map(employee => (
           <div key={employee.id} className="bg-white border employcategory featuresz border-gray-300 p-4 rounded-lg card relative overflow-hidden hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
             <img
@@ -73,7 +78,7 @@ const EmployCategory = () => {
 
       {/* See All Employees Button */}
       {!showAllEmployees && initialEmployees.length > 6 && (
-        <div className='mx-auto w-60 mt-8'>
+        <div className='mx-auto w-60 mt-8' data-aos="zoom-in-up">
         <button
           onClick={() => setShowAllEmployees(true)}
           className="bg-[#77153db2] text-white rounded mt-4 employcategory"

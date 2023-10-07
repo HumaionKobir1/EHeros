@@ -1,9 +1,14 @@
 import { HiUserGroup } from "react-icons/hi";
 import { BiSearchAlt,  BiCalendar } from "react-icons/bi";
 import { FaHome } from "react-icons/fa";
+import Aos from "aos";
+import { useEffect } from "react";
 
 
 function Advantages() {
+  useEffect(() => {
+    Aos.init();
+}, [])
   return (
     <div
       data-aos="fade-up"

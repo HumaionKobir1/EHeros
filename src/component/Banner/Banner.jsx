@@ -1,13 +1,23 @@
 import Lottie from "lottie-react";
 import animationData from "../../../public/banner.json"
 import "./Banner.css";
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
+import Aos from "aos";
 
 const Banner = () => {
+
+    useEffect(() => {
+        Aos.init();
+    }, [])
+
     return (
         <div className="bg-[rgb(234,234,235)] ">
             <div className="container mx-auto banner p-4 md:flex md:flex-row flex-col gap-3  justify-between items-center">
                 {/* Left Side */}
-                <div className="md:w-1/2 w-full">
+                <div className="md:w-1/2 w-full" data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-4">
                     Efficiently manage employee records and perform various administrative
                     </h1>
@@ -17,7 +27,7 @@ const Banner = () => {
                     <button className=" inline-flex  font-semibold rounded-xl border-2 hover:border-[#03e9f4] bg-[#77153db2] text-white  border-[#77153db2] md:block items-center">
                     <a href="#">
                         <span></span>
-                        <span></span>
+                        <span></span>  
                         <span></span>
                         <span></span>
                         Let's Start

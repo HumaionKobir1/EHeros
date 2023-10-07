@@ -1,3 +1,4 @@
+import Aos from "aos";
 import "./Curved.css";
 import {
   SiJet,
@@ -6,8 +7,12 @@ import {
   SiUnitedairlines,
   SiAircanada,
 } from "react-icons/si";
+import { useEffect } from "react";
 
 const Curved = () => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
   return (
     <>
       <div className="top-curved">
