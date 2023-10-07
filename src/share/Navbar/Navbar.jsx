@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Bars3Icon,
@@ -8,10 +8,16 @@ import "./Navbar.css";
 
 
 import ehero from '../../assets/images/ehero.png'
+import { AuthContext } from '../../provider/AuthProvider';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    
+    const {user, logOut} = useContext(AuthContext);
+    const handleLogOut = () => {
+        logOut()
+        .then(()=> {})
+        .then(error => console.log(error))
+    }
 
     return (
         <div className='bg-[#eaeaeb]'>
@@ -36,27 +42,32 @@ const Navbar = () => {
                 <li>
                     <Link to="/about">About</Link>
                 </li>
-                {/* <li>
-                    <NavLink
-                    to='/login'
-                    className={({ isActive }) => (isActive ? 'active' : 'default')}
-                    >
-                    Login
-                    </NavLink>
-                </li> */}
                 
                 </ul>
 
                 <div className='flex justify-center items-center gap-3 '>
-                    <Link to='/login' className='inline-flex font-semibold rounded-xl border-2 hover:border-[#03e9f4] bg-[#77153db2] text-white uppercase border-[#77153db2] md:block items-center'>
-                    <a href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Log In
-                    </a>
-                    </Link>
+                    {user && <img className='w-11 h-11 rounded-full' src={user.photoURL} title={user.displayName}  alt="" /> }
+                    {
+                        user ? <button onClick={handleLogOut} className='inline-flex font-semibold rounded-xl border-2 hover:border-[#03e9f4] bg-[#77153db2] text-white uppercase border-[#77153db2] md:block items-center'>
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Log Out
+                        </a>
+                        </button> :
+                        <Link to='/login' className='inline-flex font-semibold rounded-xl border-2 hover:border-[#03e9f4] bg-[#77153db2] text-white uppercase border-[#77153db2] md:block items-center'>
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Log In
+                        </a>
+                        </Link>
+
+                    }
                 </div>
 
                 {/* Mobile Navbar Section */}
