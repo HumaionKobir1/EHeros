@@ -11,6 +11,7 @@ import Reg from '../layout/Reg';
 import PrivateRoute from './PrivateRoute';
 import ViewDetails from '../share/ViewDetails/ViewDetails';
 import AllEmployees from '../page/AllEmployees/AllEmployees';
+import AddEmploy from '../page/AddEmploy/AddEmpoly';
 
 
   const router = createBrowserRouter([
@@ -32,6 +33,10 @@ import AllEmployees from '../page/AllEmployees/AllEmployees';
           element: <AllEmployees></AllEmployees>,
           loader: ()=> fetch('http://localhost:5000/allemploy')
         },
+        {
+          path: '/addemploy',
+          element: <AddEmploy></AddEmploy>
+        }
       ]
     },
     {
