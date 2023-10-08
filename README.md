@@ -1,9 +1,25 @@
-# React + Vite
+# b712-EHero-client-side-HumaionKobir1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1>EHero </h1>
+-   User Authentication: Done
+-   when you login then You can see all employ and add employ rote from navbar
+-   Employee Listing: Create a page to list all employees, including their names, positions, and contact details. users can view detailed information about each employee, including their profile picture, department, and a brief bio.
+-  Search and Filter: I have created an employee category section on the homepage. where  Add search and filter options to help users find specific employees quickly.
 
-Currently, two official plugins are available:
+<h1>Package used in this project</h1>
+-   react
+-   aos
+-   firebase
+-   heroicon
+-   react-awesome-reveal
+-   react-hook-form
+-   react-icons
+-   react-query
+-   react-responsive
+-   react-router-dom
+-   sweetalert2
+-   swiper
+-   daisyui
+-   hot-toast
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# EHeros
+<p>Live Site Link: https://dance-a96c2.web.app/</p>

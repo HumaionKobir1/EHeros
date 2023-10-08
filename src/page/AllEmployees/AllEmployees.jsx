@@ -2,15 +2,13 @@ import { useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useLoaderData } from "react-router-dom";
-import EmployRow from "../../../EmployRow/EmployRow";
+import EmployRow from "../../share/EmployRow/EmployRow";
 
 const AllEmployees = () => {
     AOS.init();
 
     const allemploy = useLoaderData();
     console.log(allemploy)
-    const [query, setQuery] = useState('');
-
     const handleSearch = event => {
         event.preventDefault();
         const search = event.target.search.value;
@@ -21,6 +19,7 @@ const AllEmployees = () => {
             <div data-aos="fade-left" className="mx-auto flex justify-center mb-4">
                 <div className="flex ">
                 <form onSubmit={handleSearch}>
+                    
                     <input
                         type="text"
                         className="w-64 bg-slate-100 px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -38,7 +37,6 @@ const AllEmployees = () => {
             </div>
 
             <table className="table w-full">
-                    {/* head */}
                     <thead>
                     <tr>
                         <th>Image</th>
@@ -52,18 +50,9 @@ const AllEmployees = () => {
                     </tr>
                     </thead>
                     <tbody>
-                    {/* row 1 */}
 
                         {
-                            allemploy.filter(post => {
-                                if(query == ''){
-                                    return post;
-                                } else if(post.title.toLowerCase().includes(query.toLocaleLowerCase())){
-                                        return post;
-                                    
-                                }
-                            })
-                            .map(employees => <EmployRow
+                            allemploy.map(employees => <EmployRow
                                 key={employees._id}
                                 employees={employees}
 
