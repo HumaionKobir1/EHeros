@@ -31,7 +31,7 @@ import AddEmploy from '../page/AddEmploy/AddEmpoly';
         {
           path: '/allemploy',
           element: <AllEmployees></AllEmployees>,
-          loader: ()=> fetch('http://localhost:5000/allemploy')
+          loader: () => fetch('http://localhost:5000/allemploy')
         },
         {
           path: '/addemploy',
