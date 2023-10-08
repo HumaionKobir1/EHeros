@@ -107,7 +107,7 @@ const Login = () => {
                 </div>
                 <div>
                     <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                    className="bg-[#77153db2] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
                     type="submit"
                     >
                     Login
@@ -122,7 +122,7 @@ const Login = () => {
                         <button><FaTwitter className='w-6 h-6'></FaTwitter></button>
                     </div>
                 </div>
-                <Link className='mt-10 underline md:hidden block text-indigo-900 font-medium text-center' to='/signUp'><span>Create an account</span></Link>
+                <Link className='mt-10 underline md:hidden block text-[#77153db2] font-medium text-center' to='/signUp'><span>Create an account</span></Link>
 
             </div>
         </div>

@@ -2,11 +2,32 @@ import React, { useState, useEffect } from 'react';
 import initialEmployees from "../../../public/employees.json"
 import '../EmployCategory/Empolycategory.css'
 import Aos from 'aos';
+import { Link } from 'react-router-dom';
 const EmployCategory = () => {
+  // const [initialEmployees, setInitialEmployees] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   const [showAllEmployees, setShowAllEmployees] = useState(false);
   const [filteredEmployees, setFilteredEmployees] = useState([]);
+  // const [loading, setLoading] = useState(true);
+
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await fetch(`http://localhost:5000/allemploy`);
+  //     const data = await response.json();
+  //     console.log(data);
+  //     setInitialEmployees(data);
+  //     setLoading(false);
+  //   } catch (error) {
+  //     console.error('Error fetching employee data:', error);
+  //     setLoading(false);
+  //   }
+  // };
+  
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
+  
 
   useEffect(() => {
     const limit = showAllEmployees ? initialEmployees.length : 6;
@@ -46,7 +67,7 @@ const EmployCategory = () => {
         <option value="IT">IT</option>
         <option value="SALES">SALES</option>
         <option value="FINANCE">FINACE</option>
-        <option value="MARKETING">MARKETING</option>
+        <option value="MARKETING">MARKETINg</option>
         <option value="SUPPORT">SUPPORT</option>
       </select>
 
